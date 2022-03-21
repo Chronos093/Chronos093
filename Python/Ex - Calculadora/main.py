@@ -24,7 +24,7 @@ def switch(case):
     elif case == "divição":
        return(div(a, b))
     else:
-       return(print("Operação invalida."))
+       return("404")
            
 
 if __name__ == '__main__':
@@ -32,4 +32,7 @@ if __name__ == '__main__':
     b = int(input('Digite o número: '))
     op = input(f'Qual a operação, soma, subtração, multiplicação, ou divição.')
     
-    print(f'O resultado é, {switch(case = op)}')
+    if switch(case = op) == "404":
+        print("ERRO: Opção invalida.")
+    else:
+        print(f'O resultado é, {switch(case = op)}')
