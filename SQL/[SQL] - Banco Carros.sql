@@ -1,0 +1,82 @@
+CREATE DATABASE IF NOT EXISTS carros;
+
+USE carros;
+
+CREATE TABLE IF NOT EXISTS lojas (
+	id INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(255) NOT NULL,
+	telefone VARCHAR(10) NOT NULL,
+	email VARCHAR(255),
+	endereco VARCHAR(255) NOT NULL,
+	num_endereco VARCHAR(100) NOT NULL,
+	bairro VARCHAR(150) NOT NULL,
+	cep VARCHAR(150) NOT NULL,
+	cidade VARCHAR(255) NOT NULL,
+	estado VARCHAR(255) DEFAULT 'São Paulo' NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE IF NOT EXISTS marcas (
+	id INT NOT NULL AUTO_INCREMENT,
+	nome_marcar VARCHAR(255) NOT NULL,
+	origem VARCHAR(255),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS inventario (
+	id INT NOT NULL AUTO_INCREMENT,
+	modelo VARCHAR(255) NOT NULL,
+	transmissao VARCHAR(255) NOT NULL,
+	motor VARCHAR(8) NOT NULL,
+	combustivel VARCHAR(255) NOT NULL,
+	marcas_id INT NOT NULL,
+	loja_id INT NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY (marcas_id) REFERENCES marcas(id),
+	FOREIGN KEY (loja_id) REFERENCES lojas(id)
+);
+
+CREATE TABLE IF NOT EXISTS clientes (
+	id INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(255) NOT NULL,
+	sobrenome VARCHAR(255) NOT NULL,
+	telefone VARCHAR(10) NOT NULL,
+	endereco VARCHAR(255) NOT NULL,
+	num_endereco VARCHAR(100) NOT NULL,
+	bairro VARCHAR(150) NOT NULL,
+	cep VARCHAR(150) NOT NULL,
+	cidade VARCHAR(255) NOT NULL,
+	estado VARCHAR(255) DEFAULT 'São Paulo' NOT NULL,
+	email VARCHAR(255),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE IF NOT EXISTS vendedor (
+	id INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(255) NOT NULL,
+	sobrenome VARCHAR(255) NOT NULL,
+	loja_id INT NOT NULL,
+	telefone VARCHAR(10) NOT NULL,
+	endereco VARCHAR(255) NOT NULL,
+	num_endereco VARCHAR(100) NOT NULL,
+	bairro VARCHAR(150) NOT NULL,
+	cep VARCHAR(150) NOT NULL,
+	cidade VARCHAR(255) NOT NULL,
+	estado VARCHAR(255) DEFAULT 'São Paulo' NOT NULL,
+	email VARCHAR(255),
+	PRIMARY KEY(id),
+	FOREIGN KEY (loja_id) REFERENCES lojas(id)
+);
+
+CREATE TABLE IF NOT EXISTS aluguel (
+	id INT NOT NULL AUTO_INCREMENT,
+	clientes_id INT NOT NULL,
+	vendedor_id INT NOT NULL,
+	iventario_id INT NOT NULL,
+	lojas_id INT NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY (clientes_id) REFERENCES clientes(id),
+	FOREIGN KEY (vendedor_id) REFERENCES vendedor(id),
+	FOREIGN KEY (iventario_id) REFERENCES inventario(id),
+	FOREIGN KEY (lojas_id) REFERENCES lojas(id)
+);

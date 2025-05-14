@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+    <title>Dash - FII</title>
+    <link rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Alfa+Slab+One'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Asset'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barrio'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bowlby+One'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee+Inline'>
+    <link rel='stylesheet' href='assets/fonts/fontawesome-all.min.css'>
+    <link rel='stylesheet' href='assets/fonts/line-awesome.min.css'>
+    <link rel='stylesheet' href='assets/css/styles.css'>
+</head>
+
+<body style='box-shadow: inset 0px 0px 12px 1px;'>
+    <div id='main'>
+        <div id='data_base' style='width: 154px;color: rgb(33,143,252);margin-left: 11px;'><span style='font-size: 12px;padding: 0px;'>Data Base:&nbsp;</span><input class='form-control-plaintext float-right text-right' type='text' value='14 / 10 / 2022' readonly='' style='font-size: 12px;width: 91px;padding: 0px;padding-top: 4px;'></div>
+    </div>
+    <div id='cota-nome'>
+        <h1 class='text-uppercase text-center' style='padding: 5px;color: rgb(30,144,255);font-family: Bangers, cursive;font-size: 70px;text-shadow: 2px -1px 3px rgb(0,0,0);'>- MXRF11 -</h1>
+    </div>
+    <div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6' style='padding: 10px;'>
+                    <div id='valor_cota' style='color: #1E90FF;'><i class='fas fa-dollar-sign valor_cota' style='width: 24px;font-size: 18px;padding: 3px;color: #2E8B57;border-style: none;text-shadow: 2px -1px 1px #556B2F;'></i><span class='text-uppercase text-left valor_cota' for='valor_cota' style='color: rgb(30,144,255);'>VALOR DA COTA:</span>
+                        <input
+                            class='form-control-plaintext valor_cota' type='text' value='R$10,19' readonly='' style='width: auto;padding-top: 0px;height: auto;font-size: 25px;'></div>
+                    <div id='rendimento_mes' style='color: #1E90FF;'><i class='fas fa-coins rendimento_mes' style='width: 24px;font-size: 18px;padding: 3px;color: #FFD700;text-shadow: 2px -1px 1px #b8860b;'></i><span class='text-uppercase text-left rendimento_mes' for='rendimento_mes'>rendimento do mês:</span>
+                        <input
+                            class='form-control-plaintext rendimento_mes' type='text' value='R$0,10' readonly='' style='width: auto;padding-top: 0px;height: auto;font-size: 25px;'></div>
+                    <div id='dividend' style='color: #1E90FF;'><i class='fas fa-percent dividend' style='width: 24px;font-size: 18px;padding: 3px;text-shadow: 2px -1px 2px #000000;color: #FFFAFA;'></i><span class='text-uppercase text-left dividend' for='dividend'>dividend yield:</span><input class='form-control-plaintext dividend'
+                            type='text' value='0,97%' readonly='' style='width: auto;padding-top: 0px;height: auto;font-size: 25px;'></div>
+                    <div id='tipo_cota' style='color: #1E90FF;'><span class='text-uppercase text-left tipo_cota' for='tipo_cota'>tipo de fii:</span><input class='form-control-plaintext text-capitalize tipo_cota' type='text' value='Papel: CRIs' readonly='' style='width: auto;padding-top: 0px;height: auto;font-size: 25px;'></div>
+                </div>
+                <div class='col-md-6' style='padding: 10px;'>
+                    <div id='rentimento_cota'>
+                        <h4 class='text-uppercase font-weight-bold' style='color: rgb(33,143,252);'>rendimento do ativo se você tiver:</h4>
+                        <div id='cota_10'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;10 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 1,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-6'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;50 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 5,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-5'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;75 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 7,5' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-4'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;100 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 10,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-3'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;250 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 25,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-2'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;500 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 50,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                        <div id='cota_-1'><span class='text-uppercase text-left font-weight-bold' style='color: rgb(33,143,252);margin: 0px;padding: 0px;'><i class='la la-money' style='padding: 3px;color: #2E8B57;text-shadow: 1px -1px 1px #556B2F;font-size: 33px;margin-top: 0px;padding-top: 0px;'></i>&nbsp; &nbsp;1000 cotas</span>
+                            <input
+                                class='form-control-plaintext float-right text-right' type='text' value='R$ 100,0' readonly='' style='width: 150px;padding: 0px;margin-top: 10px;'></div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'></div>
+            </div>
+        </div>
+    </div>
+    <script src='assets/js/jquery.min.js'></script>
+    <script src='assets/bootstrap/js/bootstrap.min.js'></script>
+</body>
+</html>
