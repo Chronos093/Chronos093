@@ -34,7 +34,7 @@ Este repositório contém meus projetos em **Python**, **Shell Script**, **SQL**
 
 Scripts e pequenos projetos que desenvolvi com Python.
 
-- [`Python/`]()
+- [`Python/`](https://github.com/Chronos093/Chronos093/tree/main/Python)
 
 ---
 
@@ -42,7 +42,7 @@ Scripts e pequenos projetos que desenvolvi com Python.
 
 Automatizações e ferramentas simples feitas em Bash.
 
-- [`ShellScripts/`]()
+- [`ShellScripts/`](https://github.com/Chronos093/Chronos093/tree/main/ShellScripts)
 
 ---
 
@@ -50,7 +50,7 @@ Automatizações e ferramentas simples feitas em Bash.
 
 Scripts usados para manipulação de dados, consultas, ETL e modelagem de banco de dados.
 
-- [`SQL/`]()
+- [`SQL/`](https://github.com/Chronos093/Chronos093/tree/main/SQL)
 
 ---
 
@@ -58,7 +58,7 @@ Scripts usados para manipulação de dados, consultas, ETL e modelagem de banco 
 
 Certificados de cursos e formações concluídas:
 
-- [`Certificados/`]()
+- [`Certificados/`](https://github.com/Chronos093/Chronos093/tree/main/Certificados)
 
 ---
 
