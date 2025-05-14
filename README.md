@@ -7,7 +7,7 @@ Este repositório contém meus projetos em **Python**, **Shell Script**, **SQL**
 ## 📁 Estrutura do Repositório
 
 ```
-[`./Chronos093/`](https://github.com/Chronos093/Chronos093)
+./Chronos093/
 │
 ├── python/                # Scripts e projetos em Python
 │   ├── projeto1/
