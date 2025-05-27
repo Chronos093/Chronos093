@@ -37,6 +37,17 @@ sleep 2
 # Instalando cifs
 sudo apt install cifs-utils -y
 
+# Verifica e Instala o Samba
+if command -v smbd >/dev/null 2>&1; then
+    echo "[INFO]    Samba já instalado"
+else
+    echo "[ALERT]   Samba não instalado"
+    sleep 2
+    echo "[INFO]   Instalando Samba ..."
+    sleep 2
+    sudo apt install samba -y
+fi
+
 clear
 echo "[INFO]   Criando arquivo de credenciais"
 sleep 2
