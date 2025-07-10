@@ -41,6 +41,7 @@ pacotes=(
     "com.bitwarden.desktop"
     "org.mozilla.Thunderbird"
     "org.gnome.Boxes"
+    "com.usebottles.bottles"
     "com.anydesk.Anydesk"
     "org.remmina.Remmina"
     "com.getpostman.Postman"
